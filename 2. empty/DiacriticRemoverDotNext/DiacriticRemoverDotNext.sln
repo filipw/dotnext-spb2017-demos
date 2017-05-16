@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26228.4
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiacriticRemoverDotNext", "DiacriticRemoverDotNext\DiacriticRemoverDotNext\DiacriticRemoverDotNext.csproj", "{BEF07BDB-311F-4F61-91D2-0EDE655C6017}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiacriticRemoverDotNext.Test", "DiacriticRemoverDotNext\DiacriticRemoverDotNext.Test\DiacriticRemoverDotNext.Test.csproj", "{143FFADC-65CD-48CE-98EF-8DF885B9AD13}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiacriticRemoverDotNext.Vsix", "DiacriticRemoverDotNext\DiacriticRemoverDotNext.Vsix\DiacriticRemoverDotNext.Vsix.csproj", "{FDF5B79F-C36B-4D44-BF12-2ABD5A8E867D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEF07BDB-311F-4F61-91D2-0EDE655C6017}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEF07BDB-311F-4F61-91D2-0EDE655C6017}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEF07BDB-311F-4F61-91D2-0EDE655C6017}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEF07BDB-311F-4F61-91D2-0EDE655C6017}.Release|Any CPU.Build.0 = Release|Any CPU
+		{143FFADC-65CD-48CE-98EF-8DF885B9AD13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{143FFADC-65CD-48CE-98EF-8DF885B9AD13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{143FFADC-65CD-48CE-98EF-8DF885B9AD13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{143FFADC-65CD-48CE-98EF-8DF885B9AD13}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDF5B79F-C36B-4D44-BF12-2ABD5A8E867D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDF5B79F-C36B-4D44-BF12-2ABD5A8E867D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDF5B79F-C36B-4D44-BF12-2ABD5A8E867D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDF5B79F-C36B-4D44-BF12-2ABD5A8E867D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
