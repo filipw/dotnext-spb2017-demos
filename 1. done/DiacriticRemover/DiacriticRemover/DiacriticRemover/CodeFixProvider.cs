@@ -17,7 +17,7 @@ namespace DiacriticRemover
     [ExportCodeFixProvider(LanguageNames.CSharp, Name = nameof(DiacriticRemoverCodeFixProvider)), Shared]
     public class DiacriticRemoverCodeFixProvider : CodeFixProvider
     {
-        private const string title = "Remove diacritics";
+        private const string title = "Remove German diacritics";
 
         public sealed override ImmutableArray<string> FixableDiagnosticIds
         {

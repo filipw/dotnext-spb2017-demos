@@ -26,8 +26,9 @@ namespace DiacriticRemover
 
         public override void Initialize(AnalysisContext context)
         {
-            context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.VariableDeclarator, SyntaxKind.Parameter,
-                SyntaxKind.PropertyDeclaration, SyntaxKind.MethodDeclaration, SyntaxKind.ClassDeclaration, SyntaxKind.InterfaceDeclaration);
+            context.RegisterSyntaxNodeAction(AnalyzeSyntaxNode, SyntaxKind.VariableDeclarator, SyntaxKind.Parameter, SyntaxKind.FieldDeclaration, 
+                SyntaxKind.EnumDeclaration, SyntaxKind.EnumMemberDeclaration, SyntaxKind.PropertyDeclaration, SyntaxKind.MethodDeclaration, 
+                SyntaxKind.ClassDeclaration, SyntaxKind.InterfaceDeclaration);
        }
 
         private static void AnalyzeSyntaxNode(SyntaxNodeAnalysisContext context)

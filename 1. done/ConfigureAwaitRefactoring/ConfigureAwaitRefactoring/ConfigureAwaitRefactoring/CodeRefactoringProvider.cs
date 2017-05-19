@@ -25,8 +25,13 @@ namespace ConfigureAwaitRefactoring
             if (awaitExpr == null) return;
 
             var semanticModel = await context.Document.GetSemanticModelAsync(context.CancellationToken);
-            var symbol = semanticModel.GetSymbolInfo(awaitExpr.Expression, context.CancellationToken).Symbol as IMethodSymbol;
-            if (symbol.ReturnType.MetadataName == nameof(ConfiguredTaskAwaitable)) return;
+            var symbol = semanticModel.GetSymbolInfo(awaitExpr.Expression, context.CancellationToken);
+
+            if (symbol.Symbol == null) return;
+            var methodSymbol = symbol.Symbol as IMethodSymbol;
+
+            if (methodSymbol == null) return;
+            if (methodSymbol.ReturnType.MetadataName == nameof(ConfiguredTaskAwaitable)) return;
 
             var action = CodeAction.Create("Add ConfigureAwait(false)", c => AddConfigureAwait(context.Document, awaitExpr.Expression, c));
             context.RegisterRefactoring(action);
